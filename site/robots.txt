@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mtomokaze-glitch.github.io/yui-ai-news/sitemap.xml
