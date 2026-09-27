@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - "site/**"
+      - ".github/scripts/security_check.py"
       - ".github/workflows/pages.yml"
 
 permissions:
@@ -26,14 +27,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+
+      - name: Scan public site for secrets and unsafe files
+        run: python3 .github/scripts/security_check.py site
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
         with:
           enablement: true
+
       - name: Upload site
         uses: actions/upload-pages-artifact@v5
         with:
           path: site
+
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
