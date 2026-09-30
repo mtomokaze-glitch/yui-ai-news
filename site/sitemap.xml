@@ -2,9 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://yui-ai-lab.github.io/yui-ai-news/</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://yui-ai-lab.github.io/yui-ai-news/issues/2026-10-01.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://yui-ai-lab.github.io/yui-ai-news/issues/2026-09-30-evening.html</loc>
