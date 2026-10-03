@@ -24,7 +24,7 @@ TEXT_SUFFIXES = {".html", ".css", ".js", ".json", ".xml", ".txt", ".svg"}
 SECRET_PATTERNS = [
     ("GitHub token", re.compile(r"(?:github_pat_[A-Za-z0-9_]{40,}|gh[pousr]_[A-Za-z0-9]{20,})")),
     ("Google API key", re.compile(r"AIza[0-9A-Za-z_-]{35}")),
-    ("OpenAI-style API key", re.compile(r"sk-[A-Za-z0-9_-]{20,}")),
+    ("OpenAI-style API key", re.compile(r"(?<![A-Za-z0-9])sk-[A-Za-z0-9_-]{20,}")),
     ("AWS access key", re.compile(r"AKIA[0-9A-Z]{16}")),
     ("JWT / bearer token", re.compile(r"eyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}")),
     ("Private key", re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----")),
